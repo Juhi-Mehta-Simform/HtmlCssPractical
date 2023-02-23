@@ -1,0 +1,601 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2874f0;
+    width: 100%;
+    height: 56px;
+    top: 0px;
+    font-weight: bold;
+    z-index: 2;
+    position: sticky;
+}
+.header-left{
+    width: 20%;
+    text-align: right;
+    margin:15px 0px;
+    cursor: pointer;
+}
+.header-left a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+.header-center{
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+    position: relative;
+}
+.header-center-input{
+    height: 36px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+.fa-search{
+    position: absolute;
+    top: 30%;
+    left: 94%;
+    font-size: 18px;
+    color: #2874f0;
+}
+.header-right{
+    width: 40%;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.header-right a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 25px;
+}
+.header-right .active{
+    background-color: white;
+    color: #2874f0;
+    padding: 5px 30px;
+    height: 35px;
+    width: 130px;
+    line-height: 23px;
+    margin-top: 8px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: white;
+}
+.fa-shopping-cart{
+    padding-right: 10px;
+}
+.fa-sort-down{
+    padding-left: 5px;
+}
+ .category-row{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+}
+ .category-col{
+    padding: 10px 0px;
+    cursor: pointer;
+    background-color: white;
+}
+
+ .category-col img{
+    width: 64px;
+    height: 64px;
+}
+ .category-col h5:hover{
+    color: #2874f0;
+}
+ .card{
+    display: flex;
+    justify-content: space-evenly;
+}
+ .card-left{
+    box-shadow: rgb(177,174,174) 0px 0px 5px 1px;
+    padding: 10px 0px;
+    margin: 50px 20px 50px 70px;
+    border-radius: 5px;
+    width: 80%;
+    background-color: white;
+}
+.card2{
+    box-shadow: rgb(177,174,174) 0px 0px 5px 1px;
+    padding: 10px 0px;
+    margin: 50px 70px 5px 70px;
+    border-radius: 5px; 
+    background-color: white;
+}
+.card-right{
+    width: 20%;
+}
+.card-right img{
+    height: 90%;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 70px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 20px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
+}
+.heading-left{
+    display: flex;
+}
+.heading-left i{
+    color: red;
+    font-size: 20px;
+    margin: 15px 0 0 35px;
+}
+.heading-left  p{
+    color: gray;
+    font-weight: bold;
+    margin: 17px 10px;
+}
+.heading-left h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.heading-right button{
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #2874f0;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold ;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 366px;
+    margin: 10px 0px;
+    
+}
+.col{
+    text-align: center;
+    line-height: 22px;
+}
+.col img{
+    width: 69px;
+    height: 150px;
+    transition: 300ms;
+}
+.col img:hover{
+    transform: scale(0.9);
+}
+.col h6{
+    color: green;
+    font-size: 13px;
+    font-weight: 800;
+}
+.col h5{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.col p{
+    font-size: 12px;
+    color: gray;
+}
+.col img{
+    width: 120px;
+    height: 150px;
+    cursor: pointer;
+    padding: 10px 0 0 20px;
+}
+.Item{
+    background-color: whitesmoke;
+}
+.carousel{
+    display: flex;
+}
+.carousel-btn{
+    position: relative;
+    padding: 20px 10px;
+    height: 120px;
+    font-size: 32px;
+    margin: auto 0;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+footer{
+    display: flex;
+    background-color: rgb(12,28,54);
+    color: white;
+    padding: 20px;
+}
+.footer_title{
+    color: silver;
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.left-footer{
+   display: flex;
+    list-style: none;
+    font-size: 14px;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.left-footer li{
+    cursor: pointer;
+    
+}
+.left-footer ul{
+    padding-bottom: 5px;
+}
+.right-footer{
+    display: flex;
+    border-left: 1px solid silver;
+    padding-left: 20px;
+    white-space: nowrap;
+    width: 50%;
+}
+.right-footer p{
+    font-size: 14px;
+}
+.rf1{
+    padding-right: 40px;
+}
+@media screen and (max-width: 1300px){
+    .left-footer{
+        font-size: 13px;
+    }
+    .right-footer p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .card-right img{
+    padding-right: 40px;
+    }
+    .card-left{
+        margin: 50px 20px 50px 40px;
+    }
+    .card2{
+        margin: 50px 40px 5px 50px;
+    }
+    .left-footer{
+        font-size: 12px;
+    }
+    .right-footer p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .col img{
+        width: 90px;
+        height: 110px;
+    }
+    .card-right img{
+        height: 88%;
+    }
+    .left-footer{
+        font-size: 11px;
+    }.right-footer p{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .col img{
+        width: 80px;
+        height: 100px;
+    }
+    .col h6{
+         font-size: 11px;
+    }
+     .col h5{
+        font-size: 12px;
+    }
+     .col p{
+        font-size: 10px;
+    }
+     .header-right a{
+        margin: 0 20px;
+    }
+     .header-right .active{
+        width: 110px;
+    }
+     .card-right img{
+        height: 87%;
+    }
+     .heading-left i{
+        margin: 13px 0 0 35px;
+    }
+     .heading-left p{
+        margin: 15px 10px;
+    }
+     .heading-left h1{
+        font-size: 18px;
+    }
+     .heading-right button{
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .card-left{
+        margin: 40px 10px 40px 15px;
+    }
+    .card2{
+        margin: 40px 10px 5px 15px;
+    }
+    .card-right img{
+        padding-top: 40px;
+        height: 90%;
+    }
+    .carousel-btn{
+        height: 80px;
+        font-size: 25px;
+        padding: 15px 8px;
+    }
+    .left-footer{
+        font-size: 10px;
+    }
+    .right-footer p{
+        font-size: 10px;
+    }   
+}
+@media screen and (max-width: 950px) {
+    .left-footer{
+        font-size: 9px;
+    }
+    .right-footer p{
+        font-size: 9px;
+    }
+    .rf1{
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .header{
+        height: 50px;
+    }
+    .header-left{
+        margin: 15px 0;
+        padding: 0 10px;
+    }
+    .header-left a{
+        font-size: 19px;
+    }
+    .header-center-input{
+        height: 32px;
+        font-size: 12px;
+        padding-left: 12px;
+    }
+    .fa-search{
+        font-size: 13px;
+        left: 93%;
+    }
+    .header-right{
+        font-size: 13px;
+    }
+    .header-right a{
+        margin: 0 12px;
+    }
+    .header-right .active{
+        width: 90px;
+        height: 33px;
+        padding: 4px 30px;
+    }
+    .fa-shopping-cart{
+        padding-right: 8px;
+    }
+    .category-col img{
+        width: 50px;
+        height: 50px;
+    }
+    .category-col h5{
+        font-size: 11px;
+    }
+    .card-left{
+        padding: 6px 0px;
+        margin: 30px 10px 30px 15px;
+    }
+    .card2{
+        padding: 6px 0px;
+        margin: 30px 10px 30px 15px;
+    }
+    .card-right img{
+        padding-top: 30px;
+        padding-right: 15px;
+        height: 90%;
+    }
+    .col img{
+        width: 60px;
+        height: 80px;
+    }
+    .col h6{
+        font-size: 9px;
+    }
+    .col h5{
+       
+       font-size: 10px;
+    }
+    .col p{
+       font-size: 8px;
+    }
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading-left h1{
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    .heading-right button{
+        width: 70px;
+        height: 35px;
+        font-size: 10px;
+    }
+    .heading-right{
+        padding-top: 5px;
+    }
+    .heading-left i{
+        margin: 13px 0 0 30px;
+        font-size: 18px;
+    }
+     .heading-left p{
+        margin: 13px 8px;
+        font-size: 14px;
+    }
+    .carousel-btn{
+        height: 60px;
+        font-size: 20px;
+        padding: 10px 6px;
+    }
+    .footer_title{
+        font-size: 12px;
+    }
+    .left-footer{
+        font-size: 8px;
+    }
+    .right-footer p{
+        font-size: 8px;
+    }
+    .rf1{
+        padding-right: 10px;
+    }
+    .footer_title{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 720px){
+    .left-footer{
+        font-size: 7.5px;
+    }
+    .right-footer p{
+        font-size: 7.5px;
+    }
+}
+@media screen and (max-width: 700px){
+    .header-center-input{
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    .fa-search{
+        font-size: 9px;
+        left: 92%;
+    }
+    .header-right{
+        font-size: 12px;
+    }
+    .header-right a{
+        margin: 0 8px;
+    }
+    .header-right .active{
+        width: 70px;
+        height: 33px;
+        padding: 6px 20px;
+        margin-top: 10px;
+    }
+    .fa-shopping-cart{
+        padding-right: 6px;
+    } 
+    .category-col h5{
+        font-size: 10px;
+    } 
+    .card-left{
+        margin: 20px 10px 20px 15px;
+    }
+    .card2{
+        margin: 20px 10px 20px 15px;
+    }
+    .card-right img{
+        padding-top: 20px;
+        height: 94%;
+    }
+    .col img{
+        width: 50px;
+        height: 75px;
+    }
+    .col h6{
+        font-size: 7.5px;
+    }
+    .col h5{
+       font-size: 9px;
+    }
+    .col p{
+       font-size: 6px;
+       font-weight: bold;
+    }
+    .heading-left h1{
+        font-size: 15px;
+        padding-top: 3px;
+    }
+    .heading-right button{
+        width: 60px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .heading-right{
+        padding-top: 5px;
+    }
+    .heading-left i{
+        margin: 13px 0 0 25px;
+        font-size: 16px;
+    }
+     .heading-left p{
+        margin: 14px 6px;
+        font-size: 12px;
+    }
+    .carousel-btn{
+        height: 50px;
+        font-size: 17px;
+        padding: 5px 4px;
+    }
+    .left-footer{
+        font-size: 7px;
+    }
+    .right-footer p{
+        font-size: 7px;
+    }
+    .rf1{
+        padding-right: 8.5px;
+    }
+    .footer_title{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 630px){
+    .left-footer{
+        font-size: 6px;
+    }
+    .right-footer p{
+        font-size: 6px;
+    }
+}
